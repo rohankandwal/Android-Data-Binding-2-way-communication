@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- You need to encapsulate the whole layout within the "layout" view -->
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- "data" is used to denote the POJO classes used -->
+    <data>
+        <!-- "variable" is used to define name which is like a object and the path of the POJO class -->
+        <!-- "name" should be your class name(case Insensitive). -->
+        <!-- "type" contains the path to the POJO class -->
+
+        <!-- Declaring SimplePOJO class which is used for binding variables to EditTexts -->
+        <variable
+            name="SimplePOJO"
+            type="com.itcse.databinding_2way.POJOClasses.SimplePOJO" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:binding = "@{SimplePOJO.name}"/>
+        <!-- Custom attribute in which we set the value and add the TextWatcher -->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:binding = "@{SimplePOJO.name}"/>
+        <!-- Custom attribute in which we set the value and add the TextWatcher -->
+
+    </LinearLayout>
+</layout>
