@@ -4,3 +4,6 @@ This is an example of Android's new Data Binding Library showing how to have a t
 ![Alt text](https://github.com/rohankandwal/Android-Data-Binding-2-way-communication/blob/master/screen%20shot.png?raw=true "When one EditText is modified, changes are reflected in another automatically")
 
 See an example on Android Marshmallow 6.0 Data Binding with RecycleView @ https://github.com/rohankandwal/Marshmallow-Databinding-w-RecyclerView
+
+Login form w/ validation through data binding
+https://github.com/rohankandwal/LoginFormW-DataBinding
